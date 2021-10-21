@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-SR-SCL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M2Z-aw-ERI">
+                                    <size key="itemSize" width="230" height="302"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animationCell" id="E1y-av-YJT" customClass="AnimationCell" customModule="Animations" customModuleProvider="target">
+                                        <rect key="frame" x="92" y="0.0" width="230" height="302"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YlI-cX-fOq">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="302"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="STj-Nn-54h">
+                                                    <rect key="frame" x="12" y="262" width="206" height="30"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX2-ek-4lb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="startAnimation:" destination="E1y-av-YJT" eventType="touchUpInside" id="9Oz-ks-dUs"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU3-Ze-2Ib">
+                                                            <rect key="frame" x="107" y="0.0" width="99" height="30"/>
+                                                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXj-oY-nKd">
+                                                    <rect key="frame" x="12" y="236.5" width="206" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cXj-oY-nKd" firstAttribute="leading" secondItem="YlI-cX-fOq" secondAttribute="leading" constant="12" id="Bcp-v4-ZFg"/>
+                                                <constraint firstItem="STj-Nn-54h" firstAttribute="top" secondItem="cXj-oY-nKd" secondAttribute="bottom" constant="5" id="OJF-Pm-P4C"/>
+                                                <constraint firstItem="STj-Nn-54h" firstAttribute="trailing" secondItem="cXj-oY-nKd" secondAttribute="trailing" id="UG4-19-Z3Y"/>
+                                                <constraint firstAttribute="bottom" secondItem="STj-Nn-54h" secondAttribute="bottom" constant="10" id="hbK-UN-aTj"/>
+                                                <constraint firstItem="STj-Nn-54h" firstAttribute="leading" secondItem="cXj-oY-nKd" secondAttribute="leading" id="kS2-87-iBW"/>
+                                                <constraint firstAttribute="trailing" secondItem="cXj-oY-nKd" secondAttribute="trailing" constant="12" id="tAe-sg-Y0T"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="230" height="302"/>
+                                        <connections>
+                                            <outlet property="animationName" destination="cXj-oY-nKd" id="R7z-Ji-ZHn"/>
+                                            <outlet property="startAnimationButton" destination="gX2-ek-4lb" id="tqA-Ft-gcs"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fcK-SR-SCL" secondAttribute="trailing" id="cQm-vH-MGs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fcK-SR-SCL" secondAttribute="bottom" id="et8-y8-rd8"/>
+                            <constraint firstItem="fcK-SR-SCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mY5-MZ-xnX"/>
+                            <constraint firstItem="fcK-SR-SCL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tCh-LV-USX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationsCollectionView" destination="fcK-SR-SCL" id="PSm-84-1mr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186.95652173913044" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
