@@ -40,7 +40,7 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX2-ek-4lb">
                                                             <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
                                                             <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                            <state key="normal" title="Button"/>
+                                                            <state key="normal" title="Animate"/>
                                                             <connections>
                                                                 <action selector="startAnimation:" destination="E1y-av-YJT" eventType="touchUpInside" id="9Oz-ks-dUs"/>
                                                             </connections>

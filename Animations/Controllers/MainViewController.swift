@@ -16,12 +16,21 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         animationsCollectionView.dataSource = self
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: Constants.normalPadding,
+                                           left: Constants.smallPadding,
+                                           bottom: Constants.smallPadding,
+                                           right: Constants.smallPadding)
+        layout.itemSize = CGSize(width: Constants.animationCellWidth, height: Constants.animationCellHeight)
+        animationsCollectionView.collectionViewLayout = layout
         populateAnimationViews()
         animationsCollectionView.reloadData()
     }
     
     func populateAnimationViews() {
         animationViews.append(AnimationViewModel(name: "Move Animation", view: BaseAnimationView()))
+        animationViews.append(AnimationViewModel(name: "Spring Animation", view: SpringAnimationView()))
     }
 
 
@@ -38,5 +47,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
 }
+
 
 

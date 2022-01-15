@@ -45,7 +45,10 @@ class BaseAnimationView: UIView, AnimationView {
         
         addSubview(blueSquare)
         addSubview(redSquare)
-        
+        setupConstraints()
+    }
+    
+    func setupConstraints() {
         NSLayoutConstraint.activate([
             blueSquare.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.4),
             blueSquare.heightAnchor.constraint(equalTo: blueSquare.widthAnchor),

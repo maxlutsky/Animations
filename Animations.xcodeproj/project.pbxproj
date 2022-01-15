@@ -17,6 +17,7 @@
 		50D67D9A2721FA95006C32EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D67D992721FA95006C32EC /* Constants.swift */; };
 		50D67D9D2721FB12006C32EC /* BaseAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D67D9C2721FB12006C32EC /* BaseAnimationView.swift */; };
 		50D67DA0272200B3006C32EC /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D67D9F272200B3006C32EC /* AnimationViewModel.swift */; };
+		50E402FD27272AC000554BEF /* SpringAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E402FC27272AC000554BEF /* SpringAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		50D67D992721FA95006C32EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50D67D9C2721FB12006C32EC /* BaseAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnimationView.swift; sourceTree = "<group>"; };
 		50D67D9F272200B3006C32EC /* AnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewModel.swift; sourceTree = "<group>"; };
+		50E402FC27272AC000554BEF /* SpringAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				50D67D9C2721FB12006C32EC /* BaseAnimationView.swift */,
+				50E402FC27272AC000554BEF /* SpringAnimationView.swift */,
 			);
 			path = AnimationViews;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				50D67D9A2721FA95006C32EC /* Constants.swift in Sources */,
 				50D67D842721F7A6006C32EC /* MainViewController.swift in Sources */,
+				50E402FD27272AC000554BEF /* SpringAnimationView.swift in Sources */,
 				50D67D802721F7A6006C32EC /* AppDelegate.swift in Sources */,
 				50D67DA0272200B3006C32EC /* AnimationViewModel.swift in Sources */,
 				50D67D972721FA1B006C32EC /* AnimationCell.swift in Sources */,

@@ -24,15 +24,11 @@ class AnimationCell: UICollectionViewCell {
         guard let animationView = animationView else { return }
         
         addSubview(animationView)
-        translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            widthAnchor.constraint(equalToConstant: Constants.animationCellWidth),
-            
             animationView.topAnchor.constraint(equalTo: topAnchor, constant: Constants.normalPadding),
             animationView.leftAnchor.constraint(equalTo: leftAnchor),
             animationView.rightAnchor.constraint(equalTo: rightAnchor),
-            animationView.heightAnchor.constraint(equalTo: animationView.widthAnchor),
             animationView.bottomAnchor.constraint(equalTo: animationName.topAnchor, constant: -Constants.smallPadding)
         ])
         animationView.setupUI()
